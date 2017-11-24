@@ -1,0 +1,173 @@
+
+.rbox {
+    z-index: 2000;
+    position: absolute;
+    left: 15px;
+    top: 60px;
+    width: 400px;
+    opacity: .9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    -webkit-user-select: none;
+}
+
+
+/*是否展示指数面板*/
+
+.rboxSearchPanCtrl {
+    background-color: #fff;
+    padding: 12px 10px 5px;
+    width: 380px;
+    font-size: 14px;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+    color: #0f89f5;
+    z-index: 10;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+}
+
+.rboxSearchPanCtrl_none {
+    composes: rboxSearchPanCtrl;
+    display: none;
+}
+
+.rboxSearchPanCtrl_display {
+    composes: rboxSearchPanCtrl;
+    display: display;
+}
+
+
+/*默认搜索结果或者指数面板*/
+
+.navBody_display {
+    transition: height 1s;
+    height: 600px;
+}
+
+.navBody_none {
+    transition: height 1s;
+    height: 0px;
+}
+
+.rboxPanels {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.rboxPanCtrl {
+    z-index: -10;
+    width: 100%;
+    position: absolute;
+    height: 24px;
+    cursor: pointer;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    background: url(../../images/panctrl.png) center center no-repeat;
+    bottom: -20px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    /* font-size: inherit; */
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    padding: 5px 40px;
+    opacity: 0.7;
+}
+
+.faChevronUp:before {
+    content: "\f077";
+}
+
+
+/*左侧导航栏*/
+
+.nav {
+    position: absolute;
+    width: 55px;
+    background-color: #f4f5f6;
+    overflow: hidden;
+    height: 100%;
+    z-index: 9999;
+}
+
+.navLi {
+    position: relative;
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    padding-top: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.craLi {
+    composes: navLi;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.craLi:hover {
+    background-color: #fff;
+    color: #1b8cfb;
+}
+
+.navTxt {
+    font-size: 13px;
+    line-height: 45px;
+    position: relative;
+}
+
+.resultPanel {
+    overflow-y: scroll;
+    margin-left: 55px;
+    padding: 10px 15px 30px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+.resultPanel::-webkit-scrollbar {
+    width: 6px;
+    height: 60px;
+    background-color: white;
+}
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+.resultPanel::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+/*定义滑块 内阴影+圆角*/
+
+.resultPanel::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.rboxPanel2{
+    padding: 20px 20px 20px 20px;
+    background: #fff;
+    
+    overflow: hidden;
+}

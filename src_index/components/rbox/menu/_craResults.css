@@ -1,0 +1,215 @@
+.traffic_tag {
+    font-family: 'Microsoft Yahei','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    float: left;
+    line-height: 30px;
+}
+/*结果面板上层统计展示*/
+.smooth_jam{
+    float: left;
+}
+.smooth_jam1{
+    position: absolute;
+    right: 118px;
+    top: 8px;
+}
+.smooth_jam2{
+    position: absolute;
+    right: 96px;
+    top:38px;
+}
+.separator {
+    position: absolute;
+    right: 38px;
+    top: 70px;
+    height: 25px;
+    width: 1px;
+    background: #e5e5e5;
+}
+.separator_LV0{
+    top: 75px;
+    composes:separator;
+}
+.separator_LV1{
+    composes:separator;
+    top: 10px;
+    right: 38px;
+}
+.separator_LV2{
+    composes:separator;
+    top: 42px;
+    right: 38px;
+}
+.separator_LV3{
+    composes:separator;
+    top: 10px;
+    right: 190px;
+}
+.separator_LV4{
+    composes:separator;
+    top: 42px;
+    right: 190px;
+}
+.separator_LV5{
+    composes:separator;
+    top: 75px;
+    right: 190px;
+}
+.smooth_jam_num{
+    padding-right: 59px;
+    float: left;
+}
+.smooth_jam_num2{
+    padding-right: 25px;
+    padding-left: 5px;
+    float: left;
+}
+
+.smooth_jam_num3{
+    position: absolute;
+    left: 290px;
+    top: 8px;
+}
+.smooth_jam_num4{
+    position: absolute;
+    left: 310px;
+    top: 38px;
+}
+
+.traffic_level_li{
+    float: left;
+    width: 33px;
+    height: 6px;
+    margin: 11px 6px 0px;
+}
+.traffic_level_1{
+    position: absolute;
+    right: 150px;
+    top: 20px;
+    width: 33px;
+    height: 6px;
+    background: #277b04;
+}
+.traffic_level_2{
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    width: 33px;
+    height: 6px;
+    background: #34b100;
+}
+.traffic_level_3{
+    composes:traffic_level_li;
+    background: #ffcb00;
+}
+.traffic_level_4{
+    composes:traffic_level_li;
+    background: #ff8800;
+}
+.traffic_level_5{
+    composes:traffic_level_li;
+    background: #df0000;
+}
+/*结果面板下面表格展示全部*/
+.table{
+    box-sizing: border-box;
+    height: 100%;
+    position: absolute;
+    margin-top: 80px;
+    width:330px;
+}
+.smooth_jam_rank{
+    padding-right: 6px;
+    padding-left: 7px;
+    float: left;
+    border-right: 1px #e5e5e5 solid;
+}
+.smooth_jam_num_name{
+    padding-right: 50px;
+    padding-left: 50px;
+    float: left;
+    border-right: 1px #e5e5e5 solid;
+
+}
+.smooth_jam_num_index{
+    padding-right: 7px;
+    padding-left: 7px;
+    float: left;
+    border-right: 1px #e5e5e5 solid;
+}
+.smooth_jam_num_hierarchy{
+    padding-right: 8px;
+    padding-left: 8px;
+    float: left;
+    border-right: 1px #e5e5e5 solid;
+}
+.table_rows{
+    box-sizing: border-box;
+    height: 100%;
+    position: absolute;
+    margin-top: 30px;
+    width:330px;
+    overflow-y: scroll;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+.table_rows::-webkit-scrollbar  
+{  
+    width: 6px;  
+    height: 30px;  
+    background-color: white;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+.table_rows::-webkit-scrollbar-track  
+{  
+    border-radius: 10px;  
+    background-color:white;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+.table_rows::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    background-color: #9c9c9c;  
+} 
+
+/*表格内的数据 */
+.row{
+    border-top: 1px solid #eaeaea;
+    margin-top: 10px;
+    float: left;
+}
+.rank{
+    float: left;
+    width: 25px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.name{
+    float: left;
+    width: 128px;
+    height: 22px;
+    text-align:center;
+    overflow: hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap;
+        cursor: pointer;
+}
+.index{
+    float: left;
+    width: 60px;
+    height: 20px;
+    text-align:center;
+}
+.hierarchy{
+    color: chartreuse;
+    float: left;
+    width: 60px;
+    height: 20px;
+    text-align:center;
+}
+
+.pager{
+    margin-top: 370px;
+}

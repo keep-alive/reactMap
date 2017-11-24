@@ -1,0 +1,116 @@
+.boxpanel{
+    position: absolute;
+    top: 58px;
+    right: -6px;
+    width: 300px;
+    background: rgb(255,255,255);
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px, rgba(0, 0, 0, 0.188235) 0px 2px 6px 0px;
+}
+/*panel Header*/
+.panel_header{
+    height:auto;
+    text-align: center;
+}
+.panel_body{
+margin-left: 5px;
+margin-top: 5px;
+height:auto;
+}
+.button1{
+    margin-left: 5px;
+    margin-top:10px;
+    border-radius: 2px;
+}
+.QueContent{
+background-color:#f4f5f6;
+}
+.sub_panel{    
+    margin: 5px 44px 5px 44px;
+    background-color: 'red';
+    height: 20px;
+}
+.colorpickerDiv{
+    margin-left: 5px;
+    width:100px;
+    height:20px;
+    border-radius: 5px;
+}
+.button_primary{
+    margin-left: 5px;
+    margin-top:10px;
+    color: #007edf;
+  background-color: #fff;
+  border-color: #007edf;
+  border-radius: 2px;
+}
+.button_primary:hover,
+.button_primary:focus {
+  color: #fff;
+  background-color: #007edf;
+  border-color: #007edf;
+}
+.button_primary:hover > a:only-child,
+.button_primary:focus > a:only-child {
+  color: currentColor;
+}
+.button_primary:hover > a:only-child:after,
+.button_primary:focus > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.button_primary:active,
+.button_primary.active {
+  color: #fff;
+  background-color: #007edf;
+  border-color: #007edf;
+}
+.button_primary:active > a:only-child,
+.button_primary.active > a:only-child {
+  color: currentColor;
+}
+.button_primary:active > a:only-child:after,
+.button_primary.active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.button_add {
+  height:12px;
+  border-color:rgba(0,0,0,0);
+  line-height: 1.5;
+  border-radius: 2px;
+  margin-left: 5px;
+  background:url(../../../images/addDefault.png) no-repeat;
+  background-position: 10px 0;
+  background-size: 10px;
+}
+.button_add:hover{
+background:url(../../../images/addHover.png) no-repeat;
+  background-position: 10px 0;
+  background-size: 10px;
+}
+.button_modify{
+  height:12px;
+  border-color:rgba(0,0,0,0);
+  line-height: 1.5;
+  border-radius: 2px;
+  margin-left: 5px;
+  background:url(../../../images/modifyDefault.png) no-repeat;
+  background-position: 9px -2px;
+  background-size: 13px;
+}
+.button_modify:hover{
+background:url(../../../images/modifyHover.png) no-repeat;
+  background-position: 9px -2px;
+  background-size: 13px;
+}

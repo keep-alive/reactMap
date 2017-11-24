@@ -1,0 +1,7 @@
+.ranging{
+    composes:toolItemSpan;
+    background-position: 11px 2px;
+}
+.ranging:hover{
+    opacity: 0.6
+}
