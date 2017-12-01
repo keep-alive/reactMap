@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mr-coding/reactMap.git"
+    "url": "git+https://github.com/keep-alive/reactMap.git"
   },
   "author": "zhang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mr-coding/reactMap/issues"
+    "url": "https://github.com/keep-alive/reactMap/issues"
   },
-  "homepage": "https://github.com/Mr-coding/reactMap#readme",
+  "homepage": "https://github.com/keep-alive/reactMap#readme",
   "dependencies": {
     "@turf/meta": "^3.5.2",
     "@turf/turf": "^3.5.2",
