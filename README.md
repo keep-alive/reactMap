@@ -1,4 +1,4 @@
-## lmap
+## reactMap
 React components for Leaflet maps.
 # How to use
 First copy the repo into your disk.
